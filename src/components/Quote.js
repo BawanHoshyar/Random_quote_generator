@@ -13,7 +13,7 @@ export default class Quote extends Component {
     }
 
     generateNewQuote() {
-        axios.get('http://api.quotable.io/random').then(
+        axios.get('https://api.quotable.io/random').then(
             res => {
                 this.setState(res.data);
                 console.log(this.state);
@@ -22,7 +22,7 @@ export default class Quote extends Component {
     }
 
     componentDidMount() {
-        axios.get('http://api.quotable.io/random').then(
+        axios.get('https://api.quotable.io/random').then(
             res => {
                 this.setState(res.data);
                 console.log(this.state);
